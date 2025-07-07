@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f55fc2;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 0 2rem 0;
+}
+
+p {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+#quote {
+    font-size: 1.5rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    color: white;
+}
+
+.button {
+    background-color: white;
+    color: #333;
+    border: none;
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: #eee;
+}
+
+.instagram {
+    position: absolute;
+    bottom: 40px;
+}
+
+.instagram a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}

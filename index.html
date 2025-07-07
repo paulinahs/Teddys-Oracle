@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Teddy's Oracle</title>
+        <meta name="description" content="random quote generator for Ed Sheeran's lyrics">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script>
+            // Sample quotes array (replace with 365 lyrics)
+            const quotes = [
+                "I found a love, to carry more than just my secrets",
+                "Loving can hurt, loving can hurt sometimes",
+                "We keep this love in a photograph",
+                "I'm in love with the shape of you",
+                "You look so beautiful in this light",
+                "We were just kids when we fell in love",
+                "When your legs don't work like they used to before",
+                "I'm dancing in the dark, with you between my arms",
+                "Your lips are on my lips, and our hearts are intertwined",
+                "I see fire, inside the mountain",
+                "We keep this love in a photograph, we made these memories for ourselves",
+                "I will be loving you 'til we're 70",
+                
+                // Add the remaining 360 lyrics here
+            ];
+
+            function getRandomQuote() {
+                    const randomIndex = Math.floor(Math.random() * quotes.length);
+                    const quote = quotes[randomIndex];
+                    document.getElementById('quote').textContent = `"${quote}"`;
+                }
+
+        </script>
+
+
+    <h1>TEDDY'S</h1>
+    <h2>ORACLE</h2>
+    <div>
+        <button class="button" onclick="getRandomQuote()">PLAY</button>
+    </div>
+    <div id="quote"></div>
+    <div class="instagram">
+        <a href="https://www.instagram.com/teddysphotos" target="_blank" rel="noopener noreferrer">
+            📷
+        </a>
+    </div>
+
+    </body>
+</html>
